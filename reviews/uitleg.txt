@@ -1,0 +1,3 @@
+1. die https://unicode-table.com/ website
+2. een fade animatie
+3. display none knoppen
