@@ -1,0 +1,3 @@
+BEM is alles in class secties doen en daar subsecties weer aan maken
+hoe je animaties weghaalt bij @media
+hoe je in stappen keyframes maakt
