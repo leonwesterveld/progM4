@@ -1,0 +1,3 @@
+aside zit links met een nav list erin met space-between plaatst de premium knop onderaan
+rechts is de main met een h1 en een list
+rechtsboven een knop om darkmode aan/uit te zetten
