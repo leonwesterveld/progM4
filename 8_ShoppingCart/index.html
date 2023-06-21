@@ -6,9 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Card</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b273e788b2.js" crossorigin="anonymous"></script>
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    
+    <section class="checkout a-popup" id="checkoutWindow">
+        <ul class="checkout__list">
+            <li class="checkout__listItem">
+                <img class="checkout__image" src="img/beige_front.webp" alt="">
+                <p class="checkout__title">beige</p>
+                <p id="js--beige" class="checkout__amount"></p>
+            </li>
+            <li class="checkout__listItem">
+                <img class="checkout__image" src="img/navy_front.webp" alt="">
+                <p class="checkout__title">navy</p>
+                <p id="js--navy" class="checkout__amount"></p>
+            </li>
+            <li class="checkout__listItem">
+                <img class="checkout__image" src="img/pink_front.webp" alt="">
+                <p class="checkout__title">pink</p>
+                <p id="js--pink" class="checkout__amount"></p>
+            </li>
+        </ul>
+    </section>
+
+    <article class="modal" id="js--shoppingModal">✔added to cart</article>
+    <button class="shoppingCart" id="checkoutButton">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-arrow-left" style="display: none;"></i>
+        <div class="shoppingCart__message">0</div>
+    </button>
+    <main>
+        <ul class="polos">
+            <li class="polos__polo a-popup">
+                <figure class="polos__figure">
+                    <img class="polos__image" src="img/beige_front.webp" alt="">
+                </figure>
+                <section class="polos__body"><h2 class="polos__h2">€90</h2>
+                    <h3 class="polos__h3">beige</h3>
+                    <div class="polos__stars">★★★★★</div>
+                    <button data-product="beige" class="polos__button">Add to Card</button>
+                </section>
+            </li>
+            <l class="polos__polo a-popup">
+                <figure class="polos__figure">
+                    <img class="polos__image" src="img/navy_front.webp" alt="">
+                </figure>
+                <section class="polos__body">
+                    <h2 class="polos__h2">€90</h2>
+                    <h3 class="polos__h3">navy</h3>
+                    <div class="polos__stars">★★★★★</div>
+                    <button data-product="navy" class="polos__button">Add to Card</button>
+                </section>
+            </l>
+            <li class="polos__polo polos__polo--third a-popup">
+                <figure class="polos__figure">
+                    <img class="polos__image" src="img/pink_front.webp" alt="">
+                </figure>
+                <section class="polos__body">
+                    <h2 class="polos__h2">€90</h2>
+                    <h3 class="polos__h3">pink</h3>
+                    <div class="polos__stars">★★★★★</div>
+                    <button data-product="pink" class="polos__button">Add to Card</button>
+                </section>
+            </li>
+        </ul>
+    </main>
 </body>
 </html>
