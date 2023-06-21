@@ -109,8 +109,13 @@ search.onkeyup = function (event) {
 
 /* observer */
 let observer = new IntersectionObserver(
-    function () {
-        console.log("hallo");
+    function (entries){
+        if (entries[0].isIntersecting === true){
+            console.log("man");
+        }
+        else {
+            console.log("hoi");
+        }
     }, {
         threshold: 0.5,
     }
