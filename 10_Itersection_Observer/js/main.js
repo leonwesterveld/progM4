@@ -108,17 +108,15 @@ search.onkeyup = function (event) {
 
 
 /* observer */
-let observer = new IntersectionObserver(
-    function (entries){
-        if (entries[0].isIntersecting === true){
-            console.log("man");
-        }
-        else {
-            console.log("hoi");
+let observer = new IntersectionObserver(//variabele aanmaken/ observer oproepen
+    function (entries){//begin function
+        if(entries[0].isIntersecting === true){//als main in beeld is
+            document.getElementsByTagName("main")[0].classList.add("a-popup");//zet popup animatie erop
+            observer.disconnect();//zet observer uit als is gebeurt
         }
     }, {
-        threshold: 0.5,
+        threshold: 0.1,//hoeveel % in beeld moet zijn 0.1 = 10% 
     }
 );
 
-observer.observe(document.getElementsByTagName("main")[0]);
+observer.observe(document.getElementsByTagName("main")[0]);//laat de observer kijken naar main

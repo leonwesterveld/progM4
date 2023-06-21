@@ -10,12 +10,7 @@
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    <section class="fill"></section>
-    <section class="searchBar">
-        <input id="js--search" type="text" placeholder="search for product" class="searchBar__input">
-        <i class="fa-solid fa-magnifying-glass searchBar__glass"></i>
-    </section>
-    <section class="checkout a-popup" id="checkoutWindow">
+    <section class="checkout" id="checkoutWindow">
         <ul class="checkout__list">
             <li class="checkout__listItem">
                 <img class="checkout__image" src="img/beige_front.webp" alt="">
@@ -50,9 +45,14 @@
         <i class="fa-solid fa-arrow-left" style="display: none;"></i>
         <div class="shoppingCart__message">0</div>
     </button>
+    <section class="fill"></section>
+    <section class="searchBar">
+        <input id="js--search" type="text" placeholder="search for product" class="searchBar__input">
+        <i class="fa-solid fa-magnifying-glass searchBar__glass"></i>
+    </section>
     <main>
         <ul class="polos">
-            <li data-title="polo - beige" class="polos__polo a-popup">
+            <li data-title="polo - beige" class="polos__polo">
                 <figure class="polos__figure">
                     <img class="polos__image" src="img/beige_front.webp" alt="">
                 </figure>
@@ -62,7 +62,7 @@
                     <button data-product="beige" class="polos__button">Add to Card</button>
                 </section>
             </li>
-            <li data-title="polo - navy" class="polos__polo a-popup">
+            <li data-title="polo - navy" class="polos__polo">
                 <figure class="polos__figure">
                     <img class="polos__image" src="img/navy_front.webp" alt="">
                 </figure>
@@ -73,7 +73,7 @@
                     <button data-product="navy" class="polos__button">Add to Card</button>
                 </section>
             </li>
-            <li data-title="polo - pink" class="polos__polo polos__polo--third a-popup">
+            <li data-title="polo - pink" class="polos__polo polos__polo--third">
                 <figure class="polos__figure">
                     <img class="polos__image" src="img/pink_front.webp" alt="">
                 </figure>
@@ -84,7 +84,7 @@
                     <button data-product="pink" class="polos__button">Add to Card</button>
                 </section>
             </li>
-            <li data-title="polo - red" class="polos__polo a-popup">
+            <li data-title="polo - red" class="polos__polo">
                 <figure class="polos__figure">
                     <img class="polos__image" src="img/red_front.webp" alt="">
                 </figure>
@@ -95,7 +95,7 @@
                     <button data-product="red" class="polos__button">Add to Card</button>
                 </section>
             </li>
-            <li data-title="polo - white" class="polos__polo a-popup">
+            <li data-title="polo - white" class="polos__polo">
                 <figure class="polos__figure">
                     <img class="polos__image" src="img/white_front.webp" alt="">
                 </figure>

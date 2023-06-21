@@ -153,6 +153,7 @@ main{
     width: 60%;
     height: 100%;
     margin: 0 auto;
+    opacity: 0;
 }
 
 .polos{
@@ -219,14 +220,14 @@ main{
 .a-popup{
     animation-name: popup;
     animation-duration: .8s;
-    animation-fill-mode: backwards;
+    animation-fill-mode: both;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 @keyframes popup {
     from{
         opacity: 0;
-        transform: translateY(2rem);
+        transform: translateY(4rem);
     }
     to{
         opacity: 1;
